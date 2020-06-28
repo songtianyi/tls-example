@@ -2,3 +2,6 @@ client
 server
 server.crt
 server.key
+sslkeylog
+tcp_client
+tcp_server

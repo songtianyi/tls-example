@@ -24,7 +24,7 @@ func init() {
 	certPool.AppendCertsFromPEM(serverCert)
 
 	// write per-session secrets
-	w, err := os.OpenFile("/Users/work/trash/sslkeylog", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0600)
+	w, err := os.OpenFile("sslkeylog", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0600)
 	if err != nil {
 		log.Fatal(err)
 	}
